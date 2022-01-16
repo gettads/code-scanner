@@ -1,6 +1,6 @@
 # PRESENTATION
 
-## As result of scanner's work you get results of process:
+## As result of scanner's work you get report in console like below:
 ![Main Page](github/1.png)
 
 **Directory test/public/folder contains test files from test task.**
