@@ -1,0 +1,11 @@
+version: '3'
+services:
+    jv-scanner:
+        image: adoptopenjdk/openjdk11:ubi
+        container_name: jv-scanner
+        volumes:
+            - ./:/opt/app/
+        command: sh -c "find /opt/app/src -name "*.java">/opt/app/sources.txt &&
+            javac -d /opt/app/bin  @/opt/app/sources.txt &&
+            java -cp /opt/app/bin scanner.Scanner "/opt/app/public"
+            "
