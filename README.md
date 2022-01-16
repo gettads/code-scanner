@@ -16,5 +16,5 @@
 ### 2. RUN inside the directory `make scan [parameters]`
  - if you launch the command without parameters, scanner will run
 in test mode: will be used files from test/public directory.;
- - parameter `dir`. If you launch this command like `make scan dir=.test/path/to/dir`,
+ - parameter `dir`. If you launch this command like `make scan dir=./test/path/to/dir`,
 scanner will process recursively all files in your custom directory.
